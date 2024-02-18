@@ -55,7 +55,7 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="text-3xl text-[#030712] font-extrabold">P-Ticket</a>
+            <a class="lg:text-3xl text-xl text-[#030712] font-extrabold">P-Ticket</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-lg">
@@ -66,7 +66,7 @@
             </ul>
           </div>
           <div class="navbar-end flex items-center">
-            <a class="btn text-[#1DD100] font-bold text-xl bg-[#1DD1001A]"
+            <a class="btn text-[#1DD100] font-bold lg:text-xl bg-[#1DD1001A]"
               >Bus <img src="./images/bus-icon.png" alt="Bus Icon"
             /></a>
           </div>
@@ -82,9 +82,9 @@
               <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md lg:max-w-fit">
-                  <h1 class="mb-5 text-5xl font-bold">
+                  <h1 class="mb-5 lg:text-5xl text-3xl font-bold">
                     End-to-End Travel with <br >
-                    <h1 class="mb-5 text-[#1DD100] text-5xl font-bold">
+                    <h1 class="mb-5 text-[#1DD100] lg:text-5xl text-3xl font-bold">
                       P Paribahan
                   </h1>
                   <p class="mb-5">
@@ -92,7 +92,7 @@
                     within the app. The <br />
                     integrated testing features allow for a streamlined .
                   </p>
-                  <button class="btn bg-[#1DD100]">Buy Tickets</button>
+                  <button onclick="" id="buy-tickets" class="btn bg-[#1DD100]">Buy Tickets</button>
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@
 
         <section>
           <div>
-            <h1 class="text-4xl font-bold items-center text-center m-5 lg:m-10">
+            <h1 class="lg:text-4xl text-2xl font-bold items-center text-center mt-10 mb-10 lg:m-10">
               Best offers for you
             </h1>
           </div>
@@ -111,7 +111,7 @@
             <div
               class="flex flex-row w-full lg:flex-row lg:w-1/2 bg-[#FFBF0F] rounded-xl mt-7 lg:m-auto"
             >
-              <div class="w-3/5 p-7 mt-3">
+              <div class="w-3/5 p-3 lg:p-7  mt-3">
                 <div>
                   <h1 class="font-extrabold text-2xl p-2">15% OFF</h1>
                   <h4 class="font-semibold">on your next purchase</h4>
@@ -127,7 +127,7 @@
             <div
               class="flex flex-row w-full lg:flex-row lg:w-1/2 bg-[#F78C9C] rounded-xl mt-7 lg:m-auto"
             >
-              <div class="w-3/5 p-7 mt-3">
+              <div class="w-3/5 p-3 lg:p-7 mt-3">
                 <div>
                   <h1 class="font-extrabold text-2xl p-2">20% OFF</h1>
                   <h4 class="font-semibold">on your next purchase</h4>
@@ -145,7 +145,7 @@
           </div>
 
           <div class="flex flex-col justify-center items-center mt-10 mb-10">
-            <button class="btn text-[#1DD100] bg-[#ebf2ea]">
+            <button class="btn text-[#1DD100] bg-[#ebf2ea] border-emerald-400">
               See All Offers
             </button>
           </div>
@@ -155,11 +155,11 @@
         <section class="border-modify mt-5">
           <section>
             <div>
-              <h1 class="text-4xl font-bold items-center text-center mt-16">
+              <h1 class="lg:text-4xl text-2xl font-bold items-center text-center mt-10 lg:mt-16 ">
                 P.H Paribahan
               </h1>
               <br />
-              <p class="text-lg font-normal items-center text-center">
+              <p class="lg:text-lg font-normal items-center text-center">
                 Yes, you can run unit tests and view the results directly within
                 the app. The integrated <br />
                 testing features allow for a streamlined .
@@ -168,13 +168,13 @@
 
             <!-- Greenline Paribahan  -->
 
-            <div class="mt-20 lg:flex justify-between w-full lg:w-auto">
+            <div class="mt-10 lg:mt-20 lg:flex justify-between w-full lg:w-auto bg-[#ffffff] gap-5">
               <div class="lg:w-3/4">
                 <div class="flex justify-between">
-                  <div class="flex gap-3">
-                    <img src="./images/bus-logo.png" alt="Bus Logo" />
+                  <div class="flex gap-3 pl-3 lg:pl-5">
+                    <img class="w-14 h-16" src="./images/bus-logo.png" alt="Bus Logo" />
                     <h2>
-                      <span class="text-[#030712] font-semibold text-2xl"
+                      <span class="text-[#030712] font-semibold lg:text-2xl text-sm"
                         >Greenline Paribahan </span
                       ><br />
 
@@ -182,10 +182,10 @@
                     </h2>
                   </div>
                   <div
-                    class="w-44 flex gap-2 items-center justify-center bg-[#1DD10026] rounded-2xl"
+                    class=" lg:w-44 flex gap-2 items-center justify-center bg-[#1DD10026] rounded-2xl "
                   >
                     <img src="./images/seat-green.png" alt="Seat Car Icon" />
-                    <h2 class="text-[#1DD100] font-semibold">
+                    <h2 class="text-[#1DD100] lg:font-semibold ">
                       <span class="font-bold">40 </span> Seats left
                     </h2>
                   </div>
@@ -217,6 +217,7 @@
                 </div>
               </div>
 
+              <div><img class="hidden lg:list-item" src="./images/info-devider.png" alt="Info divider Icon"></div>
               <div
                 class="w-1/4 m-auto flex flex-col justify-center items-center"
               >
@@ -251,77 +252,77 @@
                   </div>
                 </div>
 
-                <div>
-                  <div class="flex justify-around gap-7">
+                <div class="">
+                  <div class="flex justify-around gap-7 border">
                     <div class="flex gap-10">
                       <div class="flex flex-col gap-2 my-14">
-                        <kbd class="w-4 h-10 font-medium">A</kbd>
-                        <kbd class="w-4 h-10 font-medium">B</kbd>
-                        <kbd class="w-4 h-10 font-medium">C</kbd>
-                        <kbd class="w-4 h-10 font-medium">D</kbd>
-                        <kbd class="w-4 h-10 font-medium">E</kbd>
-                        <kbd class="w-4 h-10 font-medium">F</kbd>
-                        <kbd class="w-4 h-10 font-medium">G</kbd>
-                        <kbd class="w-4 h-10 font-medium">H</kbd>
-                        <kbd class="w-4 h-10 font-medium">I</kbd>
-                        <kbd class="w-4 h-10 font-medium">J</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">A</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">B</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">C</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">D</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">E</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">F</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">G</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">H</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">I</kbd>
+                        <kbd class="pl-5 pt-2 w-4 h-10 font-medium">J</kbd>
                       </div>
                       <div class="flex flex-col gap-2 my-14">
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">A1</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">B2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">C1</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">D1</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">E1</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">F1</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">G1</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">H1</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">I1</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">J1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">A1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">B2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">C1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">D1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">E1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">F1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">G1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">H1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">I1</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">J1</kbd>
                       </div>
                       <div class="flex flex-col gap-2 my-14">
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">A2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">B2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">C2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">D2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">E2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">F2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">G2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">H2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">I2</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">J2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">A2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">B2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">C2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">D2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">E2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">F2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">G2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">H2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">I2</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">J2</kbd>
                       </div>
                     </div>
                     <div class="flex gap-10">
                       <div class="flex flex-col gap-2 my-14">
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">A3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">B3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">C3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">D3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">E3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">F3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">G3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">H3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">I3</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">J3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">A3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">B3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">C3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">D3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">E3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">F3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">G3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">H3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">I3</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">J3</kbd>
                       </div>
                       <div class="flex flex-col gap-2 my-1">
                         <kbd
-                          class="kbd w-16 lg:w-24 h-11 font-medium bg-[#0307121A]"
+                          class="kbd w-12 lg:w-24 h-11 font-medium bg-[#0307121A]"
                           ><img
                             class="w-6 h-6"
                             src="./images/vector.png"
                             alt="Car Control Icon"
                         /></kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">A4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">B4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">C4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">D4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">E4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">F4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">G4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">H4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">I4</kbd>
-                        <kbd class="kbd w-16 lg:w-24 h-10 font-medium">J4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">A4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">B4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">C4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">D4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">E4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">F4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">G4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">H4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">I4</kbd>
+                        <kbd class="kbd w-12 lg:w-24 h-10 font-medium">J4</kbd>
                       </div>
                     </div>
                   </div>
@@ -381,7 +382,7 @@
                     <label class="font-semibold" for="a1">Passenger Name*</label
                     ><br />
                     <input
-                      class="w-full pt-2 pb-2 mt-2"
+                      class="w-full p-2 mt-2"
                       type="text"
                       name=""
                       id="a1"
@@ -391,7 +392,7 @@
                     <label class="font-semibold" for="a2">Phone Number*</label
                     ><br />
                     <input
-                      class="w-full pt-2 pb-2 mt-2"
+                      class="w-full p-2 mt-2"
                       type="number"
                       name=""
                       id="a2"
@@ -401,7 +402,7 @@
                     <label class="font-semibold" for="a3">Email ID*</label
                     ><br />
                     <input
-                      class="w-full pt-2 pb-2 mt-2"
+                      class="w-full p-2 mt-2"
                       type="email"
                       name=""
                       id="a3"
@@ -469,5 +470,8 @@
         </div>
       </section>
     </footer>
+
+<script src="./js/script.js"></script>
+
   </body>
 </html>
