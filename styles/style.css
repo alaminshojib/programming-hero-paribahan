@@ -22,8 +22,3 @@ background: rgb(247, 248, 248);
   background-image: url(../images/cupon-devider.png);
 }
 
-
-.radius-reverse {
-  background-color: transparent; 
-  background-image: paint(radius-intern);
-}
