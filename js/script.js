@@ -37,9 +37,7 @@ function idVerify(id) {
         " \u00a0" +
         " \u00a0" +
         " \u00a0" +
-        " \u00a0" +
         "Economic" +
-        " \u00a0" +
         " \u00a0" +
         " \u00a0" +
         " \u00a0" +
