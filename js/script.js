@@ -3,9 +3,6 @@ const buyTicketsBtn = document.getElementById("buy-tickets"),
 
 buyTicketsBtn.addEventListener("click", () => {
   scrollToSectionBtn.scrollIntoView({ behavior: "smooth" });
-
-
-
 });
 
 const seats = document.querySelectorAll(".kbd");
@@ -41,9 +38,7 @@ function idVerify(id) {
         " \u00a0" +
         " \u00a0" +
         " \u00a0" +
-        " \u00a0" +
         "Economic" +
-        " \u00a0" +
         " \u00a0" +
         " \u00a0" +
         " \u00a0" +
@@ -90,8 +85,7 @@ function idVerify(id) {
     const inputNumber = document.querySelector(".phoneNumberInput");
 
     inputNumber.addEventListener("input", function () {
-      const input11 =inputNumber.value.length;
-
+      const input11 = inputNumber.value.length;
 
       if (selectNumber > 0 && input11 > 0) {
         const nextBtn = document.querySelector(".next-dead");
@@ -101,8 +95,6 @@ function idVerify(id) {
       }
     });
 
-   
-
     if (identity.childNodes)
       function changeSeatColor(seat) {
         seat.style.backgroundColor = "#1DD100";
@@ -110,10 +102,9 @@ function idVerify(id) {
       }
     changeSeatColor(identity);
 
-    if (selectNumber ==4) {
+    if (selectNumber == 4) {
       alert(" You have selected Maximum Ticket");
     }
-
   });
 }
 
@@ -175,7 +166,6 @@ applyBtn.addEventListener("click", function () {
 
   const couponBox = selectElementWithId("coupon-box");
   const coupon = couponBox.value;
-
 
   if (coupon === "NEW15") {
     let totalPriceString = selectElementWithId("totalPrice").innerText;
