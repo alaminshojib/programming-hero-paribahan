@@ -178,8 +178,9 @@ applyBtn.addEventListener("click", function () {
     const applyHidden = selectElementWithId("apply-hidden");
     applyHidden.style.display = "none";
   }
+  
 
-  if (coupon === "Couple 20") {
+  else if (coupon === "Couple 20") {
     let totalPriceString = selectElementWithId("totalPrice").innerText;
     totalPrice = parseFloat(totalPriceString);
     let discountAmount = totalPrice * 0.2;
