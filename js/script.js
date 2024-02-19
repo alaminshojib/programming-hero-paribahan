@@ -3,6 +3,9 @@ const buyTicketsBtn = document.getElementById("buy-tickets"),
 
 buyTicketsBtn.addEventListener("click", () => {
   scrollToSectionBtn.scrollIntoView({ behavior: "smooth" });
+
+
+
 });
 
 const seats = document.querySelectorAll(".kbd");
@@ -19,15 +22,43 @@ function idVerify(id) {
     if (selectNumber <= 4) {
       const p = document.createElement("p");
       p.innerText =
-        " " +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
         seatLetter +
-        " ---------------------" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
         "Economic" +
-        "--------------" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
+        " \u00a0" +
         550;
 
-
-        
       setContainer.appendChild(p);
 
       const seatPrice = 550;
@@ -59,7 +90,8 @@ function idVerify(id) {
     const inputNumber = document.querySelector(".phoneNumberInput");
 
     inputNumber.addEventListener("input", function () {
-      const input11 = inputNumber.value.length;
+      const input11 =inputNumber.value.length;
+
 
       if (selectNumber > 0 && input11 > 0) {
         const nextBtn = document.querySelector(".next-dead");
@@ -69,9 +101,7 @@ function idVerify(id) {
       }
     });
 
-    // if (selectNumber ==4) {
-    //   alert(" You have selected Maximum Ticket");
-    // }
+   
 
     if (identity.childNodes)
       function changeSeatColor(seat) {
@@ -79,9 +109,13 @@ function idVerify(id) {
         seat.style.color = "#fff";
       }
     changeSeatColor(identity);
+
+    if (selectNumber ==4) {
+      alert(" You have selected Maximum Ticket");
+    }
+
   });
 }
-
 
 idVerify("#A1");
 idVerify("#A2");
@@ -124,8 +158,6 @@ idVerify("#J2");
 idVerify("#J3");
 idVerify("#J4");
 
-
-
 function selectElementWithId(id) {
   const selectedId = document.getElementById(id);
   return selectedId;
@@ -144,7 +176,7 @@ applyBtn.addEventListener("click", function () {
   const couponBox = selectElementWithId("coupon-box");
   const coupon = couponBox.value;
 
-  console.log(coupon);
+
   if (coupon === "NEW15") {
     let totalPriceString = selectElementWithId("totalPrice").innerText;
     totalPrice = parseFloat(totalPriceString);
@@ -161,7 +193,6 @@ applyBtn.addEventListener("click", function () {
 
   if (coupon === "Couple 20") {
     let totalPriceString = selectElementWithId("totalPrice").innerText;
-    console.log(totalPriceString);
     totalPrice = parseFloat(totalPriceString);
     let discountAmount = totalPrice * 0.2;
 
