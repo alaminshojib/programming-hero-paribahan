@@ -37,7 +37,7 @@ function idVerify(id) {
         " \u00a0" +
         " \u00a0" +
         " \u00a0" +
-        "Economic" +
+        "Economoy" +
         " \u00a0" +
         " \u00a0" +
         " \u00a0" +
@@ -75,7 +75,7 @@ function idVerify(id) {
       seats.classList.add("disabled");
     }
 
-    if (selectNumber == 4) {
+    if (selectNumber == 1) {
       const applyBtn = document.getElementById("deadClass");
       applyBtn.removeAttribute("disabled", true);
     }
